@@ -20,6 +20,6 @@ In practical terms: no malware, no attempts to compromise accounts or services, 
 ## Development notes
 
 - Android SDK location: set `ANDROID_HOME` or add `sdk.dir=...` to `local.properties` (this file is gitignored).
-- Build: `./gradlew :app:assembleDebug`
+- Build: `./gradlew :app:assembleDebug` (add `--no-daemon` on CI or constrained shells). Requires **JDK 17+** and Android SDK **Platform 36** (see README).
 
 For security-sensitive reports, see [SECURITY.md](SECURITY.md).
